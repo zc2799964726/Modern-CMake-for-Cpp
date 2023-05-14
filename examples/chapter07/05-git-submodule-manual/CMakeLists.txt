@@ -6,3 +6,4 @@ configure_file(config.yaml config.yaml COPYONLY)
 
 add_subdirectory(extern/yaml-cpp)
 target_link_libraries(welcome PRIVATE yaml-cpp)
+# 需要手动在extern目录下git submodule add https://github.com/jbeder/yaml-cpp.git

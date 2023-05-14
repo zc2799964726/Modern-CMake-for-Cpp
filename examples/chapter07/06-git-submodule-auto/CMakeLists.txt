@@ -15,3 +15,4 @@ if (NOT TARGET yaml-cpp)
   add_subdirectory(extern/yaml-cpp)
 endif()
 target_link_libraries(welcome PRIVATE yaml-cpp)
+# 不幸的是，若使用并发版本系统(CVS)、Subversion (SVN)、Mercurial或其他将代码交付给用户的工具，这种方法就会失效
