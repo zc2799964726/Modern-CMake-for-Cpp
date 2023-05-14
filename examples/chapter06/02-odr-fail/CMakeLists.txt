@@ -3,3 +3,5 @@ project(ODR CXX)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(odr one.cpp two.cpp)
+
+# 单一定义规则ODR
