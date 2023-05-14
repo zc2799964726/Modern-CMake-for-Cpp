@@ -7,3 +7,6 @@ if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
 elseif(CMAKE_SYSTEM_NAME STREQUAL "Windows")
   target_sources(main PRIVATE gui_windows.cpp)
 endif()
+
+# target_sources命令
+# 用于向target追加源文件

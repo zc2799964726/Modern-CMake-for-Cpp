@@ -12,3 +12,6 @@ if(SHA STREQUAL "")
 endif()
 
 target_compile_definitions(print_commit PRIVATE "SHA=${SHA}")
+
+# execute_process命令
+# 这条命令可以执行一个或多个命令作为当前命令的子命令，将输出的结果保存到cmake变量或文件中，所有的进程使用单个的标准错误输出管道。
