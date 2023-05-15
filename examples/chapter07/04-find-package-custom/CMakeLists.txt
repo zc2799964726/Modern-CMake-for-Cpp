@@ -3,6 +3,9 @@ project(FindPackageCustom CXX)
 
 list(APPEND CMAKE_MODULE_PATH
             "${CMAKE_SOURCE_DIR}/cmake/module/")
+# 首先编写一个新的FindPQXX.cmake文件，将它存储在项目源代码树的cmake/module目录中
+# 需要确保当使用find_package()时，CMake可以找到这个查找模块，
+# 所以会在CMakeLists.txt中将该目录追加到CMAKE_MODULE_PATH变量中
 find_package(PQXX REQUIRED)
 message("FOUND: " ${PQXX_FOUND})
 add_executable(main main.cpp)

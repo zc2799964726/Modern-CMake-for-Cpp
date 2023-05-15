@@ -13,5 +13,6 @@ target_link_libraries(unit_tests PRIVATE
                       sut Catch2::Catch2WithMain)
 
 list(APPEND CMAKE_MODULE_PATH ${catch2_SOURCE_DIR}/extras)
+# 告诉cmake去哪里找.cmake文件
 include(Catch)
 catch_discover_tests(unit_tests)
