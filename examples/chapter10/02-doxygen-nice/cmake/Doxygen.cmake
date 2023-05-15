@@ -16,6 +16,8 @@ function(Doxygen input output)
       COMMENT "Generate HTML documentation"
   )
 endfunction()
+# 使用样式
+# 在线教程建议使用多个应用程序串行执行来升级体验，流行的方法是使用Breathe和Exhale扩展将Doxygen的输出转换为Sphinx。这个过程看起来有点麻烦，会引入许多其他依赖项(比如Python)。
 
 macro(UseDoxygenAwesomeCss)
   include(FetchContent)
